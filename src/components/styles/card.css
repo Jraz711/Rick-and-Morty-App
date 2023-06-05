@@ -28,7 +28,6 @@
 .resident_cicle {
   display: block;
   width: 15px;
-  aspect-ratio: 1;
   border-radius: 50%;
   background-color: #ccc;
 }
