@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import banner from './assets/img/banner.png'
 import Card from './components/Card'
 import InputSearch from './components/InputSearch'
 import LocationInfo from './components/LocationInfo'
 import useFetch from './hooks/useFetch'
 import getRandomNumber from './utils/getRandomNumber'
-
 
 function App() {
   const randomId = getRandomNumber(126)
@@ -22,7 +22,9 @@ function App() {
 
   return (
     <div className='app'>
-      <h1>Rick and Morty App</h1>
+      <div>
+        <img src={banner} alt="font" />
+      </div>
       <InputSearch
         setidLocation={setidLocation}
       />

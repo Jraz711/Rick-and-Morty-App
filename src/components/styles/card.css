@@ -8,6 +8,18 @@
   overflow: hidden;
 }
 
+.resident_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  transition: all 0.25s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 80%;
+}
+
 .resident_header {
   position: relative;
 }

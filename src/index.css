@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #05292e;
 }
 
 code {
@@ -27,6 +28,12 @@ p,
 ul {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+h2,
+h3 {
+  color: white;
+  ;
 }
 
 ul {
