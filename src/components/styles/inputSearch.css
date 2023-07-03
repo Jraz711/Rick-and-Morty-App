@@ -1,0 +1,26 @@
+.inputsearch{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.inputsearch_input{
+  height: 2.5rem;
+  width: 15rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.inputsearch_btn{
+  width: 5rem;
+  font-size: 1rem;
+  color: #062226 ;
+  background-color:#9ACD32 ;
+  font-weight: bold;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}

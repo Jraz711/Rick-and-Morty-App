@@ -22,34 +22,37 @@ function App() {
 
   return (
     <div className='app'>
-      <div>
-        <img src={banner} alt="font" />
+      <header className='header'>
+        <img className='header_img' src={banner} alt="" />
+      </header>
+      <div className='formulario'>
+        <InputSearch
+          setidLocation={setidLocation}
+        />
+        {
+          hasError
+            ? <h2 className='msg_error'>❌Hey ! you must provide an id from 1 to 126 🥲 </h2>
+            : (
+              <>
+                <div className='location'>
+                  <LocationInfo
+                    location={location}
+                  />
+                </div>
+                <div className='resident-container'>
+                  {
+                    location?.residents.map(url => (
+                      <Card
+                        url={url}
+                        key={url}
+                      />
+                    ))
+                  }
+                </div>
+              </>
+            )
+        }
       </div>
-      <InputSearch
-        setidLocation={setidLocation}
-      />
-      {
-        hasError
-          ? <h2>❌Hey ! you must provide an id from 1 to 126 🥲 </h2>
-          : (
-            <>
-
-              <LocationInfo
-                location={location}
-              />
-              <div className='resident-container'>
-                {
-                  location?.residents.map(url => (
-                    <Card
-                      url={url}
-                      key={url}
-                    />
-                  ))
-                }
-              </div>
-            </>
-          )
-      }
     </div>
   )
 }

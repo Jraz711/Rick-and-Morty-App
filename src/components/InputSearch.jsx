@@ -1,4 +1,5 @@
 import { useRef, useState } from "react"
+import './styles/inputsearch.css'
 
 const InputSearch = ({ setidLocation }) => {
 
@@ -32,13 +33,14 @@ const InputSearch = ({ setidLocation }) => {
 
   return (
     <>
-      <form onSubmit={searchLocation} className='input'>
+      <form onSubmit={searchLocation} className='inputsearch'>
         <input
+          className="inputsearch_input"
           type="text"
           placeholder='Input a dimension number from 1 to 126'
           ref={idLocationValue}
         />
-        <button>Search</button>
+        <button className="inputsearch_btn">Search</button>
       </form>
       {
         inputIsEmpty && <h3>This FIeld is requiered. 👀</h3>
