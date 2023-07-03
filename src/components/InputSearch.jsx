@@ -1,5 +1,5 @@
 import { useRef, useState } from "react"
-import './styles/inputsearch.css'
+import './styles/inputSearch.css'
 
 const InputSearch = ({ setidLocation }) => {
 
